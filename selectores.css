@@ -1,0 +1,74 @@
+/*Selectores de Etiqueta, class, iD, Atributo, Adyacente, Hijos, Hermanos - Colisión de Estilos*/
+h1 {
+  background-color: aqua;
+}
+#azul {
+  /*id azul*/
+  color: blue;
+}
+.letra-grande {
+  /* clase letra-grande */
+  font-size: 10em;
+}
+h1, 
+h2 {
+  /*Los dos*/
+  color: wheat;
+}
+header div {
+  /*El div que esta dentro de un header, no importa cuan adentro*/
+  background-color: brown;
+}
+p[class] {
+  /* Que tenga class sin importar cuál*/
+  color: lawngreen;
+}
+h2[title] {
+  /*Que tenga titulo*/
+  color: darkseagreen;
+}
+h2[title="ejemplo"] {
+  /*Tiene que estar textualmente esto si o si*/
+  color: green;
+}
+h2[class~="letra-grande"] {
+  /*Tiene que estar no importa si hay más*/
+  text-decoration: underline;
+}
+a[lang|="es"]{
+  /* así sea es-ES o es-AR lo coge*/
+  font-style: italic;
+}
+p + p {
+  /* Afecta los parrafos que estan inmediatamente después de otro parrafo */
+  background-color: cyan;
+}
+
+div > h1 {
+  /* todos los h1 que sean directamente hijos de un div */
+}
+
+p ~ p {
+  /* Tienen que ser hermanos y que el elemento 1 sea mayor de elemento dos sin importar que sea consecutivo */
+  background-color:  mediumseagreen;
+}
+
+/* 
+EN CSS LAS PROPIEDADES SIEMPRE SE HEREDAN DE SUS PADRES Y LUEGO SUMA LAS SUYAS 
+-
+LOS SELECTORES DE CLASE TIENEN PRIORIDAD SOBRE LOS DE ETIQUETA, Y EL ID TIENE PRIORIDAD SOBRE UNA CLASE. 
+- 
+PRIMERO LEE ETIQUETAS, LUEGO CLASES, Y POR ULTIMO IDS 
+-
+css navegador
+css perfil de usuario
+css desarrollador
+
+propiedades que el elemento hereda
+propiedades propias del elemento
+carga una a una las clases segun estan nombradas
+carga el id
+**!IMPORTANT se impone a elementos de más peso jerarquico**
+*/
+
+
