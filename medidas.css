@@ -1,0 +1,58 @@
+body {
+  font-size: 12px;
+}
+/*
+Unidad de medida EM: Relativizar el tamaño a la anchura que tenga la M mayuscula de la font que estemos utilizando
+--
+Los EM y EX se heredan, son relativos y se calculan con respecto a lo que se recibe de herencia. (no a la base)
+--
+Los REM se calculan con respecto a la medida raiz (base).
+--------------
+Unidad de medida EX: Relativizar el tamaño a la altura que tenga la X minuscula de la font que estemos utilizando
+*/
+.em {
+  font-size: 2em;
+}
+.ex {
+  font-size: 2ex;
+}
+.px {
+  font-size: 2px;
+}
+.rem {
+  font-size: 2rem;
+}
+-----------------------
+/*
+IN -> Inches (Pulgadas)  1in = 2.54cm 
+CM -> centimetros
+MM -> milimetros 10mm = 1cm
+PT -> Puntos 1pt = 0.35mm
+PC -> picas  1pc = 4.23mm ó 1pc = 12pt
+*/
+
+in {
+  font-size: 1in;
+}
+cm {
+  font-size: 1cm;
+}
+mm {
+  font-size: 2mm;
+}
+pt {
+  font-size: 10pt;
+}
+pc {
+  font-size: 1pc;
+}
+
+-----------------------
+/*
+*/
+div {
+  width: 60%;
+  margin-left: 20%;
+  height: 200px;
+  background-color: darkred;
+}
