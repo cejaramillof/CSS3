@@ -1,0 +1,30 @@
+/*RED GREEN BLUE*/
+.one {
+  /*Palabras Clave*/
+  background-color: red;
+}
+.dos {
+  /*RGB Decimal*/
+  background-color: rgb(128,128,128);
+}
+.tres {
+  /*RGB Porcentual*/
+  background-color: rgb(50%,50%,50%);
+}
+.cuatro {
+  /*RGB Hexadecimal (00FFFF es lo mismo que 0ff - cuando los tres pares son lo mismo 00 ff ff - 0 f f)*/
+  background-color: #00FFFF;
+}
+.cinco {
+  /*HSL - HUE SATURATION LIGHTNESS - TONO SATURACION BRILLO*/
+  background-color: hsl(0,100%,50%);
+}
+.seis {
+  /*RedBlueGreenAlpha Decimal - RGBA*/
+  background-color: rgba(0,255,0,0.5);
+}
+.siete {
+  /*HueSaturationLightnessAlpha - HSLA*/
+  background-color: hsla(0,100%,50%,0.5);
+}
+
