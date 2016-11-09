@@ -1,0 +1,41 @@
+div {
+  width: 80%;
+  margin: 7%;
+  height: 200px;
+  display: inline-block;
+  background-color: green;
+  
+  border-width: 4px;
+  border-style: solid;
+  /* 
+  solid - dashed - double - dotted - inset - outset - none 
+  border-style: solid dashed dotted double;
+    -(tendria 4 bordes arriba derecha abajo izquierda)
+  border-top-style: solid;
+    -(border solo arriba)
+  */ 
+  border-color: red;
+  
+  border: 4px solid red;
+  
+  border-radius: 30px;
+  /*
+  border-radius: 20px 50px 30px 80px;
+  (agujas del reloj)
+  
+  border-top-left-radius: 80px;
+  border-top-left-radius: 30px 60px;
+  (el primero es el horizontal y el segundo vertical)
+  
+  */
+  
+ /* Imagen como borde de elemento
+  border-image: url(../imagen.jpg);
+  border-image: url(../imagen.jpg) 20;
+  (este 20 es del borde de la imagen hacia adentro)
+  border-image: url(../imagen.jpg) 20 stretch;
+  border-image: url(../imagen.jpg) 20 repeat;
+  border-width: 15px;
+  
+  */
+}
