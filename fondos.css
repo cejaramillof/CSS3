@@ -1,0 +1,38 @@
+div {
+  width: 75%;
+  margin: 7%;
+  height: 200px;
+  
+  background: url(../imagen.jpg);
+  border: 10px solid black;
+  
+  padding: 10px;
+  
+  /*
+    background-origin: border-box;
+    donde inicia a pintar la imagen
+    border-box - content-box - padding-box  
+  ------------------------------
+    
+    background: url(../firma.jpg), url(../imagen.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center center;
+  ------------------------------
+    background: -moz-linear-gradient(
+      left,
+      black 0%, orange 20%, blue 80%, green 100%
+    );
+    (
+      left 45deg,
+      left, top, right, bottom,
+    )
+  ------------------------------
+    background: -moz-radial-gradient(
+      center, ellipse,
+      black 0%, red 30%, rgba(0,0,255,0), khaki 100%
+    );
+    (center, left, top, right, bottom)
+  
+  */
+  
+}
