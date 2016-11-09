@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Irlandesa";
+  src: url("../fonts/irlandesa.eot");
+  src: local('?'), url("..fonts/irlandesa.woff") format("woff"),
+                   url("..fonts/irlandesa.ttf") format("truetype");
+}
+
+p {
+  font-family: "Irlandesa";
+}
+
+/*
+https://fonts.google.com/
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style>
+font-family: 'Roboto', sans-serif;
+*/
+________________________________
+
+body {
+  font-size: 12px;
+}
+div {
+  font-size: 3em;
+  /* 3 veces el tamaño que hereda del body = 36px */
+}
+
+div p {
+  font-size: 1.5em;
+  /* 3em x 1.5em = 4.5em porque son heredables y escalables
+  si quisiera que no fueran heredables ni escalables usaria REM 
+  (REM es una relacion siempre con el tamaño del body)
+  EM es heredable*/
+}
+
+-------------------------------
+p {
+  font-weight: 100;
+  /* 100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900 
+    normal(400) - bold(700) - bolder - lighter*/
+}
+
+-------------------------------
+
+p {
+  font-style: normal;
+  /* normal, italic, oblique, */
+}
+
+-------------------------------
+
+p {
+  text-align: center;
+  /* left, right, center, justify */
+}
+
+-------------------------------
+
+p {
+  line-height: 30px;
+  /* espacio entre las lineas */
+}
+
+-------------------------------
+
+p {
+  text-decoration:: line-through;
+  /* none, overline, underline, line-through */
+}
+
+-------------------------------
+
+p {
+  text-transform: uppercase;
+  /* none, full-width, lowercase, uppercase, capitalize */
+  font-variant: small-caps;
+  /* normal, small-caps*/
+}
+
+-------------------------------
+
+p {
+  text-align: left;
+  text-indent: 50px;
+  /* se identa la primer linea */
+}
+
+-------------------------------
+
+p {
+  letter-spacing: 20px;
+  /* espacio entre letras */
+  word-spacing: 15px;
+  /* espacio entre palabras */
+}
