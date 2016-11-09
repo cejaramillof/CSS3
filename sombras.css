@@ -1,0 +1,20 @@
+body {
+  background: khaki;
+}
+div {
+  width: 75%;
+  margin: 7%;
+  height: 200px;
+  background: green;
+  box-shadow: -20px -15px 1px black;
+  text-shadow: 10px 15px 1px black;
+  /*
+  box-shadow: Xpx Ypx Dpx color, Xpx Ypx Dpx color;
+  text-shadow: Xpx Ypx Dpx color, Xpx Ypx Dpx color;
+  
+  box-shadow: inset 10px 10px 5px gray;
+  
+  text-shadow: 1px 1px 0px #585858, 2px 2px 0px #585858, 3px 3px 0px #585858, 4px 4px 0px #585858, 5px 25x 0px #585858, 6px 6px 0px #585858, 7px 7px 0px black;
+  */
+ 
+}
