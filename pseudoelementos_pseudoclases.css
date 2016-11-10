@@ -1,0 +1,123 @@
+p {
+  background-color: red;
+  
+}
+p:before {
+  content:'-';
+  background: blue;
+}
+
+/*
+p:after {
+  content:'-';
+}
+p:before {
+  content:'-';
+}
+*/
+
+p:first-letter {
+  font-size: 5em;
+  /*solo a la primer letra*/
+}
+p:first-line {
+  font-size: 5em;
+  font-variant: small-caps;
+  /*solo a la primer linea*/
+}
+
+/*
+----------------------------
+pseudoclases de enlace
+*/
+
+a:link {
+  /* aun no han sido visitadas*/
+  color: red;
+}
+a:visited {
+  /* link visitado */
+  color: darkred;
+}
+
+/*
+----------------------------
+pseudoclases dinámicas
+*/
+
+p:hover {
+  transform: scale(1.2);
+  color: lightcoral;
+}
+
+a:active {
+  color: green;
+  background-color: red;
+}
+
+input:focus{
+  background-color: lightblue;
+}
+
+/*
+----------------------------
+pseudoclases combinadas en enlaces
+link > visited > hover > active
+en este orden
+*/
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: orange;
+}
+a:hover {
+  font-size: 1.4em;
+}
+a:active {
+  color: transparent;
+}
+
+/*
+----------------------------
+otras pseudoclases
+*/
+
+:nth-child(N)
+/*número que ocupa como hijo del padre del elemento que estamos apuntando ej: hijo numero 4*/
+:nth-last-child(N)
+/*igual al anterior pero empezando del ultimo*/
+
+:nth-of-type(N)
+/*nos referimos al tipo parrafos, articulos y en N el nómero*/
+:nth-last-of-type(N)
+/*igual pero comenzando de atras para adelante*/
+
+:first-of-type
+/*el primero de este tipo*/
+:last-of-type
+/*el ultimo de este tipo*/
+:only-of-type
+/*el unico de este tipo, si hay mas de 1 no se marca*/
+:empty
+/*si esta totalmente vacio*/
+:not(S)
+/* article:not(.clase)
+marca el elemento que no tenga la clase 'clase'
+marca el elemento que no sea del S(SELECTOR) que nombramos*/
+
+:last-child
+/*ultimo hijo*/
+:only-child
+/*unico hijo*/
+:root
+/*elemento raiz*/
+:enable
+/*elementos activados */
+:disable
+/*elementos desactivados*/
+:checked
+/*checkbox o radiobuttons activos*/
+
+/* even(pares) / odd (impares) */
