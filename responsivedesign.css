@@ -1,0 +1,21 @@
+div {
+  background-color: aqua;
+}
+
+@media screen (min-width: 480px) {
+  div {
+    background-color:red;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  div {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  div {
+    background-color: blue;
+  }
+}
