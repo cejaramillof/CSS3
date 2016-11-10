@@ -1,0 +1,70 @@
+/*Componentes de un elemento
+Margin > background-color > background-image > border > padding > content
+*/
+
+p {
+  width: 80%;
+  height: 40px;
+  
+  min-width: 200px;
+  max-width: 500px;
+  ------------------------------------------
+  padding: 10px;
+  padding: 10px 20px;
+  padding: 10px 2px 1px 30px;
+  
+  padding-top: 20px;
+  ------------------------------------------
+  margin: 20px;
+  margin: 10px 20px;
+  margin: 10px 2px 1px 30px;
+  
+  margin-top: 20px;
+  display: inline-block;
+    
+  /* 
+    más de 17 tipos de display existen 
+    display block parrafos, h1, h2 (all h)
+    display line-block span
+    
+    más usados:
+    - inline(todo en una linea) 
+    - inline-block(cada linea es un bloque) 
+    - block(cada elemento es una fila total) 
+    - none(no-mostrar una caja)
+  */
+  ------------------------------------------
+}
+/*
+Coordenadas
+position: 
+-static (es el por defecto, siempre pinta un elemento despues de otro - ignora los valores de top, left, bottom, right)
+
+-relative (damos coordenadas a un elemento con relacion a otro, al padre o a uno que este por encima - top: 10px - se pone a 10px de la caja padre)
+
+-absolute (damos coordenadas a un elemento, y todos los otros elementos lo ignoran - queda por encima - toma como cordenadas para posicionarse el contenedor más cercano - si ponemos top es del documento, para que cuente el padre hay que ponerle relative al padre)
+
+-fixed(se posiciona en un lugar especifico de la pagina y no se mueve asi scrollees top, left, bottom, right)
+
+-float(hacemos que un elemento flote a la derecha, flote a la izquierda y los otros elementos lo ignoran(cuando los otros no tienen nada en position) si los otros son relative ahi el relative queda por encima, si los otros tienen display inline-block quedan uno al lado del otro clear: both - right - left;
+limpia el float
+)
+*/
+
+/* z-index
+-entre mayor el número más a la vista del usuario queda
+-si no tiene un position no sirve el z-index
+*/
+
+/* Overflow: hidden
+-Ocultar la parte de un elemento que se salga de su contenedor(elemento padre)
+-sirve en posicion relative, en fixed y absolute no
+*/
+
+/* visibility: hidden; 
+oculta algo pero si ocupa un espacio de flujo en la pagina
+*/
+
+/* opacity: 0.3; 
+va de 0 a 1, 
+*/
