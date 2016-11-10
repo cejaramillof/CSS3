@@ -1,0 +1,109 @@
+div {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  /* 
+    
+  Estructura transformaciones
+    transform: tipo(cantidad)
+      tipo: doblar, desplazar, rotar, etc..
+      cantidad: grados, etc..
+    transform: tipoX(cantidad)
+    transform: tipoY(cantidad
+    ó
+    transform: tipo(cantidadX, cantidadY)
+      solo aplica en eje X o Y
+  */
+}
+/*Rotate
+transform: rotate(10deg);
+  normalmente las cajas giran sobre el centro, pero podemos alterarlo
+transform-origin: left top;
+*/
+
+/*Skew
+transform: skew(5deg);
+
+  la caja se inclina lo que queramos
+transform: skewX(5deg) skewY(-5deg);
+ó
+transform: skew(5deg, -5deg);
+*/
+
+/*Scale
+transform: scale(2);
+
+1 es el tamaño default
+
+transform: scale(2, 4);
+*/
+
+/*Traslate
+transform: translate(-10px, -10px)
+mueve las cosas en el eje que quiera
+*/
+
+/*Transiciones
+transition-property: all;
+  a qué atributos poner la transformacion(anchura, altura)
+transition-duration: 2s;
+  tiempo tarda transformacion en completarse
+transition-timing-function: linear;
+  ease
+  ease-in
+  ease-out
+  ease-in-out
+  que comience mas rapido y termine más suave o al reves.
+transition-delay: 1s;
+  retardo en iniciar a ocurrir la transicion
+
+----
+transition: all 2s ease 1s;
+*/
+div:hover {
+  transform: rotate(30deg);
+}
+
+/*Animación - valores de animaciones*/
+div:hover {
+  animation-name: nombre;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+  
+  animation: nombre 2s 1;
+  animation: nombre 2s infinite;
+}
+/*Animación - keyframes*/
+@keyframes nombre{
+  /*fases animacion*/
+  0% {
+    background-color: red;
+    transform: scale(0.5);
+  }
+  50%, 90% {
+    /* se pondria amarillo al 50% y luego al 90% de nuevo */
+    background-color: yellow;
+  }
+  72% {
+    background-color: aqua;
+  }
+  
+  /* de from a to */
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: translate(20px);
+  }
+  /*Combinado*/
+  from {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: scale(1.3);
+  }
+  to {
+    transform: translate(20px);
+  }
+}
