@@ -1,0 +1,216 @@
+/* variables css3 */
+body {
+  background-color: khaki;
+  --color_principal: #FF0000;
+  --distancia: 50px;
+}
+
+div {
+  background-color: var(--color_principal);
+  border: 3px solid black;
+  margin-top: var(--distancia);
+}
+
+/* grid css3 */
+
+body {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  -ms-grid-row-span: 4;
+  background-color: green;
+}
+ 
+div {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-color: red;
+}
+
+article {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 3;
+  background-color: blue;
+}
+
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  background-color: yellow;
+}
+
+/* calc css3 */
+
+div {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  left: -moz-calc(50% -100px);
+  /*
+  left: -moz-calc(50% -100px + (2.5% - 1.8em));
+  
+  margin-top: -moz-calc(var(--distancia) - 30px);
+  */
+}
+
+/* filtro de imágenes 
+(le ponemos a la imagen la clase 'blur', 'brightness', 'etc'..)
+
+-----------------
+efecto desenfoque
+-webkit-filter: blur(Npx); (recomendable entre 0px a 4px)
+
+figure .blur {
+  -webkit-filter: blur(1.3px);
+}
+
+-----------------
+efecto brillo
+-webkit-filter: brightness (N);
+
+figure .brightness {
+  -webkit-filter: brightness (1.5);
+}
+
+-----------------
+efecto contraste
+-webkit-filter: contrast (N);
+
+figure .contrast{
+  -webkit-filter: contrast(1.3);
+}
+
+-----------------
+efecto escala de grises
+-webkit-filter: grayscale(N%);
+
+figure .grayscale {
+  -webkit-filter: grayscale(70%);
+}
+
+-----------------
+efecto rotacion del color
+-webkit-filter: hue-rotate(Ndeg);
+
+figure .huerotate {
+  -webkit-filter: hue-rotate(90deg);
+}
+
+-----------------
+efecto inversión 
+-webkit-filter: invert(N%);
+
+figure .invert {
+  -webkit-filter: invert(80%);
+}
+
+-----------------
+efecto opacidad
+-webkit-filter: opacity(N%);
+
+figure .opacity {
+  -webkit-filter: opacity(30%);
+}
+
+-----------------
+efecto saturacion
+-webkit-filter: saturate(N);
+
+figure .saturate {
+  -webkit-filter: saturate(7);
+}
+
+-----------------
+efecto sepia
+-webkit-filter: sepia(N%);
+
+figure .sepia {
+  -webkit-filter: sepia(80%);
+}
+
+-----------------
+combinar efectos fotograficos
+
+así esta mal:
+figure .combinacion {
+  -webkit-filter: grayscale(80%);
+  -webkit-filter: blur(2px);
+}
+
+correcto:
+figure .combinacion {
+  -webkit-filter: grayscale(80%) blur(2px);
+}
+
+-----------------
+agregar filtro a video
+.video-fitler {
+  -webkit-filter: sature(6) brightness(0.5);
+}
+
+-----------------
+ejemplo efecto combinado y todo
+al posar el raton en la imagen se quita el desenfoque, tambien se le quita la escala de grises y por ultimo se aplica un contraste y se adorna con un borde redondeado del 50% convirtiendo la imagen en un circulo, si sus dimensiones son cuadradas.
+
+figure .combinaciones {
+  -webkit-filter: blur(2px) grayscale(100%);
+  -webkit-transition: all 0.4s ease;
+}
+
+figure .combinaciones:hover {
+  -webkit-filter: blur(0px) grayscale(0%) contrast(4);
+  border-radius: 50%;
+  border: 8px solid green;
+}
+*/
+
+
+
+/*
+Flexbox
+
+div {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+
+  direccion: 
+    row: en filas
+    row-reverse: en filas inversas
+    column: en columnas
+    column-reverse: en columnas inversas
+
+  contenido:
+    nowrap: una sola linea
+    wrap: multiples lineas;
+    wrap-reverse: multiples lineas inversas;
+
+  lo inverso es a como se escribió en el html
+  lineas en sentido vertical filas, y horizontal columnas
+
+article:nth-of-type(1) {
+  background: green; 
+  -webkit-flex: 1; espacio que ocupa
+  -webkit-order: 2; orden en que se muestra
+}
+article:nth-of-type(2) {
+  background: red; 
+  -webkit-flex: 2; espacio que ocupa
+-webkit-order: 3; orden en que se muestra
+}
+article:nth-of-type(3) {
+  background: yellow;
+  -webkit-flex: 1; espacio que ocupa
+-webkit-order: 1; orden en que se muestra
+}
+
+}
+*/
+
