@@ -1,0 +1,18 @@
+extends components/plantilla
+block contenidos
+	section.intro
+		.intro__imagen: img(src="../images/imagen-empty.png")
+		.intro__contenido
+			h2= title[0] + title
+			p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				| Proin ex mi, gravida sit amet imperdiet vel, sodales a mi.
+				| Proin sit amet tellus nec nisl bibendum ornare nec at augue.
+				| nteger semper feugiat varius.
+			span.
+				Proin sed urna quis orci interdum rutrum.
+				Integer rhoncus finibus nunc, ac porttitor ex dapibus ac.
+			a(class="boton") Leer Mas
+	main.contenido
+		each titulo in arrayTitulos
+			+caja('imagen-empty.png', titulo, 'Lorem ipsum dolor sit amet consectetur')

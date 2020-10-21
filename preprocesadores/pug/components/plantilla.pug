@@ -1,0 +1,18 @@
+include config
+mixin caja(imagen, titulo, contenido)
+	.caja
+		.caja__imagen: img(src="../images/"+imagen alt="imagen intro")
+		.caja__contenido
+				h3 #{titulo}
+				p= contenido
+doctype html
+html
+	include head
+	body
+		header
+			h1= app.name
+			if usuario
+				a Hola #{usuario}
+			else
+				a.boton #{register}
+		block contenidos

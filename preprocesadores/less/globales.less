@@ -1,0 +1,52 @@
+@dark: true;
+@color-claro: if((@dark), #8841da, #FFFFFF);
+@color-primario: if((@dark), #FFFFFF, #333333);
+@color-secundario:#8841da;
+@color-variacion: if((@dark), #FFFFFF, #012179); // condicional
+
+@color-fondo: if((@dark), #333333, #FFF);
+@color-texto:#FFFFFF;
+@color-texto-secundario: if((@dark), #8841da, #333333);
+@color-sombra:#333333;
+
+@Fuente1:'Lato', sans-serif;
+@Fuente2: 'Oswald', sans-serif;
+@fuente-base: 18px;
+
+// mixin se declaran como clases
+.sombra-caja {
+	box-shadow: 0px 5px 15px 0px fade(@color-primario, 50%);
+}
+
+// mixin se declaran como clases
+.Oswald {
+	font-family: @Fuente2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.fuente(@font-size){
+	font-size: @font-size;
+	line-height: @font-size + 10%;
+}
+
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: @Fuente1;
+	color: @color-primario;
+	background-color: @color-texto;
+	.fuente(@fuente-base);
+}
+
+// condicional
+body when (@dark = true) {
+	background-color: @color-sombra;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	.Oswald;
+}
